@@ -6,6 +6,8 @@
 
 ### LIS4368 Requirements:
 
+*Course Work Links:*
+
 1. [A1 README.md](a1/README.md "Assignment 1 README.md")
 
     - Install JDK
