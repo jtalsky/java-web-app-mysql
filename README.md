@@ -8,13 +8,13 @@
 
 1. [A1 README.md](a1/README.md "Assignment 1 README.md")
 
-   - Install JDK
-   - Install Tomcat
-   - Provide screenshots of installations
-   - Create Bitbucket repo
-   - Complete Bitbucket tutorials
-   - Complete Bitbucket tutourials (bitbucketstationlocations and myteamquotes)
-   - Provide git command descriptions
+    - Install JDK
+    - Install Tomcat
+    - Provide screenshots of installations
+    - Create Bitbucket repo
+    - Complete Bitbucket tutorials
+    - Complete Bitbucket tutourials (bitbucketstationlocations and myteamquotes)
+    - Provide git command descriptions
 
 2. [A2 README.md](a2/README.md "Assignment 2 README.md")
 
