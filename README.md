@@ -7,19 +7,13 @@
 ### LIS4368 Requirements:
 
 1. [A1 README.md](a1/README.md "Assignment 1 README.md")
-<<<<<<< HEAD
 
-=======
->>>>>>> 2fc1d94f0184f1e2f0b99b39b83f8fca306dddf7
    - Install JDK
    - Install Tomcat
    - Provide screenshots of installations
    - Create Bitbucket repo
-<<<<<<< HEAD
    - Complete Bitbucket tutorials
-=======
    - Complete Bitbucket tutourials (bitbucketstationlocations and myteamquotes)
->>>>>>> 2fc1d94f0184f1e2f0b99b39b83f8fca306dddf7
    - Provide git command descriptions
 
 2. [A2 README.md](a2/README.md "Assignment 2 README.md")
