@@ -52,6 +52,6 @@
 
 ### Tutorial Links:
 
-*Bitbucket Tutorial - Station Locations:* ![A1 Bitbucket Station Locations Tutorial Link](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
+*Bitbucket Tutorial - Station Locations:* [A1 Bitbucket Station Locations Tutorial Link](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
 
-*Tutorial: Request to update a teammate's repository:* ![A1 My Team Quotes Tutorial Link](https://bitbucket.org/jht24a/lis4368_repo)
+*Tutorial: Request to update a teammate's repository:* [A1 My Team Quotes Tutorial Link](https://bitbucket.org/jht24a/lis4368_repo)
