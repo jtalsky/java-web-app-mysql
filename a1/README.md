@@ -49,3 +49,9 @@
 *Screenshot of a1/index.jsp*
 
 ![A1 Index.jsp Screenshot](img/a1_index.png)
+
+### Tutorial Links:
+
+*Bitbucket Tutorial - Station Locations:* ![A1 Bitbucket Station Locations Tutorial Link](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
+
+*Tutorial: Request to update a teammate's repository:* ![A1 My Team Quotes Tutorial Link](https://bitbucket.org/jht24a/lis4368_repo)
