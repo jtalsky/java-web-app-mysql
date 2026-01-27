@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="A personal portfolio highlighting skills in programming, design, and project development gained through college coursework.">
 	<meta name="author" content="Jake H. Talsky">
-	<link rel="icon" href="favicon.ico">
+	<link rel="icon" href="img/favicon.ico">
 
 	<title>My Online Portfolio</title>
 
