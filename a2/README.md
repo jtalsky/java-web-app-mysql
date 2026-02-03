@@ -42,6 +42,6 @@ Query Results
 
 *Java Skill Set's Screenshots*
 
-| [Skillset 1: System Properties](../skillsets/SS1_System_Properties) | [Skillset 2: Looping Structures](../skillsets/SS2_Looping_Structures) | [Skillset 3: Number Swap](../skillsets/SS3_Number_Swap) |
+| [Skillset 1: System Properties](../skillsets/SS1_System_Properties) | [Skillset 2: Looping Structures](../skillsets/SS2_Looping_Structures/) | [Skillset 3: Number Swap](../skillsets/SS3_Number_Swap) |
 | ------------------------------ | ------------------------------ | ------------------------------ |
 | [![Skillset 1](img/SS1_output.png)](img/SS1_output.png) | [![Skillset 2](img/SS2_output.png)](img/SS2_output.png) | [![Skillset 3](img/SS3_output.png)](img/SS3_output.png) |
