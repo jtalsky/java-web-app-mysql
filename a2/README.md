@@ -13,14 +13,14 @@
 2. Create a Database Servlet using @WebServlet, inclusive
 3. Set and confirm environment variable paths
 4. Properly display assessment links through http://localhost:9999/
+5. Chapter 5 and 6 Questions
 
 #### README.md file should include the following items:
 
-* Assessment links
-* Screenshot of querybook.html
-* Screenshot of query results
-* Screenshot of a2/index.jsp file
-* Chapter Questions (5 and 6)
+* [http://localhost:9999/hello](http://localhost:9999/hello)
+* [http://localhost:9999/hello/HelloHome.html](http://localhost:9999/hello/HelloHome.html)
+* [http://localhost:9999/hello/sayhello](http://localhost:9999/hello/sayhello)
+* [http://localhost:9999/hello/querybook.html](http://localhost:9999/hello/querbook.html)
 
 #### Assignment Screenshots (Note: **BE SURE** to modify for specific course!):
 
