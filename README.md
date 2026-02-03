@@ -20,6 +20,12 @@
 
 2. [A2 README.md](a2/README.md "Assignment 2 README.md")
 
+    - Install MySQL Workbench (and connect)
+    - Create and connect to application database
+    - Write a "Hello-world" Java Servlet
+    - include completed assignment in A2 index.jsp file
+    - Chapter Questions (5 and 6)
+
 3. [A3 README.md](a3/README.md "Assignment 3 README.md")
 
 4. [A4 README.md](a4/README.md "Assignment 4 README.md")
