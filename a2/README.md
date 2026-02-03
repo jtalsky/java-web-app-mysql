@@ -18,7 +18,7 @@
 #### README.md file should include the following items:
 
 * [http://localhost:9999/hello](http://localhost:9999/hello)
-* [http://localhost:9999/hello/HelloHome.html](http://localhost:9999/hello/HelloHome.html)
+* [http://localhost:9999/hello/HelloHome.html](http://localhost:9999/hello/index.html)
 * [http://localhost:9999/hello/sayhello](http://localhost:9999/hello/sayhello)
 * [http://localhost:9999/hello/querybook.html](http://localhost:9999/hello/querbook.html)
 
