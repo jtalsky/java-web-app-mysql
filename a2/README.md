@@ -3,49 +3,45 @@
 >Also, this file **must** use Markdown syntax, and provide project documentation as per below--otherwise, points **will** be deducted.
 >
 
-# Course Title
+# LIS4368
 
-## Your Name
+## Jake Talsky
 
-### Assignment # Requirements:
+### Assignment 2 Requirements:
 
-*Sub-Heading:*
-
-1. Ordered-list items
-2. 
-3. 
+1. Development Environment through AMPPS
+2. Create a Database Servlet using @WebServlet, inclusive
+3. Set and confirm environment variable paths
+4. Properly display assessment links through http://localhost:9999/
 
 #### README.md file should include the following items:
 
-* Bullet-list items
-* 
-* 
-* 
-
-> This is a blockquote.
-> 
-> This is the second paragraph in the blockquote.
->
-> #### Git commands w/short descriptions:
-
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
+* Assessment links
+* Screenshot of querybook.html
+* Screenshot of query results
+* Screenshot of a2/index.jsp file
+* Chapter Questions (5 and 6)
 
 #### Assignment Screenshots (Note: **BE SURE** to modify for specific course!):
 
-*Screenshot of AMPPS running http://localhost*:
+http://localhost:9999/hello/index.html
 
-![AMPPS Installation Screenshot](img/ampps.png)
+!["hello/index.html" Assessment Link](img/hello.png)
 
-*Screenshot of running java Hello*:
+http://localhost:9999/hello/index.html
 
-![JDK Installation Screenshot](img/jdk_install.png)
+!["hello/sayhello" Assessment Link](img/using_servlets.png)
 
-*Screenshot of Android Studio - My First App*:
+http://localhost:9999/hello/querybook.html (selected item)
 
-![Android Studio Installation Screenshot](img/android.png)
+!["hello/querybook.html" Assessment Link](img/database_connectivity1.png)
+
+Query Results
+
+![Query results Assessment Link](img/database_connectivity2.png)
+
+*Java Skill Set's Screenshots*
+
+| Skillset 1: System Properties[../skillsets/SS1_System_Properties] | Skillset 2: Looping Structures[../skillsets/SS2_Looping_Structures] | Skillset 3: Number Swap[../skillsets/SS3_Number_Swap] |
+| ------------------------------ | ------------------------------ | ------------------------------ |
+| ![Skillset 1](img/SS1_output.png)(img/SS1_out.png) | ![Skillset 2](img/SS2_output.png)(img/SS2_out.png) | ![Skillset 3](img/SS3_output.png)(img/SS3_out.png) |

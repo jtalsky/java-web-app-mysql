@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="A personal portfolio highlighting skills in programming, design, and project development gained through college coursework.">
 	<meta name="author" content="Jake H. Talsky">
-	<link rel="icon" href="img/favicon.ico">
+	<link rel="icon" href="favicon.ico">
 
 	<title>My Online Portfolio</title>
 
@@ -23,14 +23,22 @@ h2
 	-webkit-text-fill-color: transparent;
 	color: transparent;
 	padding-top: 50px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 	font-size: 52px;
 	font-family: "trebuchet ms", sans-serif;
 	animation: fadeInDown 1s ease-in-out;
 }
-@keyframes fadeInDown
-{
-	0% {opacity: 0; transform: translateY(-50px);}
-	100% {opacity: 1; transform: translateY(0);}
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateX(-50%) translateY(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-50%) translateY(0);
+	}
 }
 .item
 {
@@ -94,6 +102,19 @@ h2
 	position: relative;
 	z-index: 2;
 }
+.carousel-link
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: inherit;
+	text-decoration: none;
+	z-index: 2;
+}
+.carousel-link:hover
+{
+	text-decoration: none;
+}
 </style>
 	
 </head>
@@ -127,43 +148,53 @@ h2
        <!-- Carousel items -->
         <div class="carousel-inner">
 
-				 <div class="active item" style="background: url(img/robot.jpg) no-repeat left center; background-size: cover;">
-					 <div class="container">
-						 <div class="carousel-caption">
-								<h3>First slide label.</h3>
-							 <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget.</p>
-							 <a class="btn btn-large btn-primary" href="#">Learn more</a>
-						 </div>
-					 </div>
-				 </div>					
+	<!-- Slide 1 -->
+	<div class="active item" style="background: url(img/robot.jpg) no-repeat left center; background-size: cover;">
+		<a href="https://www.linkedin.com/in/jake-talsky-3737a8212/"
+		   target="_blank"
+		   rel="noopener noreferrer"
+		   class="carousel-link">
+			<div class="container">
+				<h2>Jake H. Talsky</h2>
+				<div class="carousel-caption">
+					<h3>LinkedIn</h3>
+					<span class="btn btn-large btn-primary">Click Me!</span>
+				</div>
+			</div>
+		</a>
+	</div>
 
-         <div class="item" style="background: url(img/Random_Turtle.jpg) no-repeat left center; background-size: cover;">
-                <h2>Slide 2</h2>
-                <div class="carousel-caption">
-                  <h3>Second slide label</h3>
-                  <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-						 <!--  <img src="img/slide2.png" alt="Slide 2">									 -->						
-                </div>
-            </div>
+	<!-- Slide 2 -->
+	<div class="item" style="background: url(img/Random_Turtle.jpg) no-repeat left center; background-size: cover;">
+		<a href="https://bitbucket.org/"
+		   target="_blank"
+		   rel="noopener noreferrer"
+		   class="carousel-link">
+			<div class="container">
+				<h2>Jake H. Talsky</h2>
+				<div class="carousel-caption">
+					<h3>Bitbucket</h3>
+					<span class="btn btn-large btn-primary">Click Me!</span>
+				</div>
+			</div>
+		</a>
+	</div>
 
-         <div class="item" style="background: url(img/keyboard.jpg) no-repeat left center; background-size: cover;">
-                <h2>Slide 3</h2>
-                <div class="carousel-caption">
-                  <h3>Third slide label</h3>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-						<!--  <img src="img/slide3.png" class="img-responsive" alt="Slide 3">							 -->								
-                </div>
-            </div>
-
-        </div>
-        <!-- Carousel nav -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-    </div>
+	<!-- Slide 3 -->
+	<div class="item" style="background: url(img/keyboard.jpg) no-repeat left center; background-size: cover;">
+		<a href="https://github.com/"
+		   target="_blank"
+		   rel="noopener noreferrer"
+		   class="carousel-link">
+			<div class="container">
+				<h2>Jake H. Talsky</h2>
+				<div class="carousel-caption">
+					<h3>GitHub</h3>
+					<span class="btn btn-large btn-primary">Learn more</span>
+				</div>
+			</div>
+		</a>
+	</div>
 </div>
 <!-- End Bootstrap Carousel  -->
 

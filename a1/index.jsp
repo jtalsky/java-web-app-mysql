@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="My online portfolio that illustrates skills acquired while working through various project requirements.">
 	<meta name="author" content="Mark K. Jowett, Ph.D.">
-	<link rel="icon" href="favicon.ico">
+	<link rel="icon" href="../favicon.ico">
 
 	<title>LIS4368 - Assignment1</title>
 
