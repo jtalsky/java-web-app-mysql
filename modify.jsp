@@ -11,7 +11,7 @@
 	<meta name="author" content="Mark K. Jowett, Ph.D.">
 	<link rel="icon" href="favicon.ico">
 
-	<title>CRSXXXX - JSP Forms</title>
+	<title>LIS4368 - JSP Forms</title>
 
 	<%@ include file="/css/include_css.jsp" %>		
 

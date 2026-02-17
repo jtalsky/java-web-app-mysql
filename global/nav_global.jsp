@@ -1,3 +1,53 @@
+<style>
+/* Navbar background */
+nav.navbar.navbar-inverse
+{
+    background-color: #782F40 !important;
+    background-image: none !important;
+    border-color: #CEB888 !important;
+    border-bottom: 3px solid #CEB888;
+}
+
+/* Brand text (Home) */
+.navbar-inverse .navbar-brand
+{
+    color: #CEB888;
+    font-weight: bold;
+}
+
+/* Brand hover */
+.navbar-inverse .navbar-brand:hover
+{
+    color: white;
+}
+
+/* Nav links */
+.navbar-inverse .navbar-nav > li > a
+{
+    color: white;
+}
+
+/* Hover effect */
+.navbar-inverse .navbar-nav > li > a:hover
+{
+    color: #CEB888;
+    background-color: transparent;
+}
+
+/* Active page tab */
+.navbar-inverse .navbar-nav > .active > a
+{
+    background-color: #5a2330;
+    color: #CEB888;
+}
+
+/* Mobile menu button bars */
+.navbar-inverse .navbar-toggle .icon-bar
+{
+    background-color: #CEB888;
+}
+</style>
+
 <%@ page import="java.util.Date, java.util.TimeZone, java.text.SimpleDateFormat" %>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">

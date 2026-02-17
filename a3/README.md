@@ -36,11 +36,15 @@
 
 [![2. Screenshot of populated tables](img/a3_populated.png)](img/a3_populated.png)
 
-*3. A3 MWB File*
+*3. A3 index.jsp*
+
+[![3. Screenshot of index.jsp](img/a3_index.png)](img/a3_erd.png)
+
+*4. A3 MWB File*
 
 [Pet Store MWB](docs/a3.mwb)
 
-*4. A3 SQL File*
+*5. A3 SQL File*
 
 [Pet Store SQL](docs/a3.sql)
 
