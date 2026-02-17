@@ -3,11 +3,11 @@
 >Also, this file **must** use Markdown syntax, and provide project documentation as per below--otherwise, points **will** be deducted.
 >
 
-# LIS4368-0001 Advanced Web Applications Development
+# LIS4368 - Advanced Web Applications Development
 
-## Jake Talsky
+## Jake H. Talsky
 
-### A1 Requirements:
+### Assignment 1 Requirements:
 
 *Sub-Heading:*
 

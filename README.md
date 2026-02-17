@@ -1,8 +1,8 @@
 > **NOTE:** This README.md file should be placed at the **root of your main directory.**
 
-# LIS4368-0001 Advanced Web Applications Development
+# LIS4368 - Advanced Web Applications Development
 
-## Jake Talsky
+## Jake H. Talsky
 
 ### LIS4368 Requirements:
 
@@ -27,6 +27,12 @@
     - Chapter Questions (5 and 6)
 
 3. [A3 README.md](a3/README.md "Assignment 3 README.md")
+
+    - Screenshot of ERD
+    - Screenshot of populated tables
+    - Screenshots of a3 index.jsp
+    - MWB File
+    - SQL File
 
 4. [A4 README.md](a4/README.md "Assignment 4 README.md")
 

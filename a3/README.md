@@ -3,49 +3,43 @@
 >Also, this file **must** use Markdown syntax, and provide project documentation as per below--otherwise, points **will** be deducted.
 >
 
-# Course Title
+# LIS4368 - Advanced Web Application Development
 
-## Your Name
+## Jake H. Talsky
 
-### Assignment # Requirements:
+### Assignment 3 Requirements:
 
-*Sub-Heading:*
+*Deliverables:*
 
-1. Ordered-list items
-2. 
-3. 
-
+1. Entity Relationship Diagram (ERD)
+2. Include data (at least 10 records in each table)
+3. Provide Bitbucket read-only access to a3 repo (Language SQL), must include README.md, using Markdown syntax, and include links to all of the following files (from README.md):
+    * docs folder: a3.mwb, and a3.sql
+    * img folder: a3.png (export a3.mwb file as a3.png)
+    * README.md (must display a3.png ERD)
+4. Blackboard Links: a3 Bitbucket rep
 #### README.md file should include the following items:
 
-* Bullet-list items
-* 
-* 
-* 
+* Screenshot of A3 ERD that links to the image
 
 > This is a blockquote.
 > 
 > This is the second paragraph in the blockquote.
->
-> #### Git commands w/short descriptions:
-
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
 
 #### Assignment Screenshots (Note: **BE SURE** to modify for specific course!):
 
-*Screenshot of AMPPS running http://localhost*:
+*1. Screenshot of ERD*
 
-![AMPPS Installation Screenshot](img/ampps.png)
+[![1. Screenshot of ERD](img/a3_erd.png)](img/a3_erd.png)
 
-*Screenshot of running java Hello*:
+*2. Screenshot of populated tables*
 
-![JDK Installation Screenshot](img/jdk_install.png)
+[![2. Screenshot of populated tables](img/a3_populated.png)](img/a3_populated.png)
 
-*Screenshot of Android Studio - My First App*:
+*3. A3 MWB File*
 
-![Android Studio Installation Screenshot](img/android.png)
+[3. A3 MWB File](docs/a3.mwb)
+
+*4. A3 SQL File*
+
+[4. A3 SQL File](docs/a3.sql)
