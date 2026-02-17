@@ -38,8 +38,8 @@
 
 *3. A3 MWB File*
 
-[3. A3 MWB File](docs/a3.mwb)
+[Pet Store MWB](docs/a3.mwb)
 
 *4. A3 SQL File*
 
-[4. A3 SQL File](docs/a3.sql)
+[Pet Store SQL](docs/a3.sql)
