@@ -40,7 +40,7 @@ Query Results
 
 ![Query results Assessment Link](img/database_connectivity2.png)
 
-*Java Skill Set's Screenshots*
+#### Java Skill Set's Screenshots
 
 | [Skillset 1: System Properties](../skillsets/SS1_System_Properties) | [Skillset 2: Looping Structures](../skillsets/SS2_Looping_Structures/) | [Skillset 3: Number Swap](../skillsets/SS3_Number_Swap) |
 | ------------------------------ | ------------------------------ | ------------------------------ |

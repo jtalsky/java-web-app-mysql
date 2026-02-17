@@ -43,3 +43,9 @@
 *4. A3 SQL File*
 
 [Pet Store SQL](docs/a3.sql)
+
+#### Java Skill Set's Screenshots
+
+| [Skillset 4: Directory Info](../skillsets/SS4_Directory_Info) | [Skillset 5: Character Info](../skillsets/SS5_Character_Info/) | [Skillset 6: Determine Character](../skillsets/SS6_Determine_Character) |
+| ------------------------------ | ------------------------------ | ------------------------------ |
+| [![Skillset 4](img/SS4_output.png)](img/SS4_output.png) | [![Skillset 5](img/SS5_output.png)](img/SS5_output.png) | [![Skillset 6](img/SS6_output.png)](img/SS6_output.png) |
