@@ -13,7 +13,8 @@
 2. Create a Database Servlet using @WebServlet, inclusive
 3. Set and confirm environment variable paths
 4. Properly display assessment links through http://localhost:9999/
-5. Chapter 5 and 6 questions
+5. Skillsets 1-3
+6. Chapter 5 and 6 questions
 
 #### README.md file should include the following items:
 
@@ -24,19 +25,19 @@
 
 #### Assignment Screenshots (Note: **BE SURE** to modify for specific course!):
 
-http://localhost:9999/hello/index.html
+*http://localhost:9999/hello/index.html*
 
 !["hello/index.html" Assessment Link](img/hello.png)
 
-http://localhost:9999/hello/index.html
+*http://localhost:9999/hello/index.html*
 
 !["hello/sayhello" Assessment Link](img/using_servlets.png)
 
-http://localhost:9999/hello/querybook.html (selected item)
+*http://localhost:9999/hello/querybook.html (selected item)*
 
 !["hello/querybook.html" Assessment Link](img/database_connectivity1.png)
 
-Query Results
+*Query Results*
 
 ![Query results Assessment Link](img/database_connectivity2.png)
 

@@ -18,6 +18,7 @@
     * img folder: a3.png (export a3.mwb file as a3.png)
     * README.md (must display a3.png ERD)
 4. Blackboard Links: a3 Bitbucket rep
+5. Skillsets 4-6
 #### README.md file should include the following items:
 
 * Screenshot of A3 ERD that links to the image

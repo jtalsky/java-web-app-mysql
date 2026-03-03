@@ -13,7 +13,8 @@
 
 1. Add jQuery validation and regular expressions - as per the entity attribute requirements
 2. Provide Bitbucket read-only access to p1 repo, must include README.md, using Markdown syntax
-3. Chapter 9 and 10 questions
+3. Skillsets 7-9
+4. Chapter 9 and 10 questions
 
 #### README.md file should include the following items:
 
@@ -29,3 +30,9 @@
 *Passed Validation*
 
 ![Passed Validation](img/passed_validation.png)
+
+#### Java Skill Set's Screenshots
+
+| [Skillset 7: Count Characters](../skillsets/SS7_Count_Characters) | [Skillset 8: ASCII](../skillsets/SS8_ASCII) | [Skillset 9: Grade Calculator](../skillsets/SS9_Grade_Calculator) |
+| ------------------------------ | ------------------------------ | ------------------------------ |
+| [![Skillset 7](img/SS7_output.png)](img/SS7_output.png) | [![Skillset 8](img/SS8_output.png)](img/SS8_output.png) | [![Skillset 9](img/SS9_output.png)](img/SS9_output.png) |
