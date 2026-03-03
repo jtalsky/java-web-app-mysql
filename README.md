@@ -40,11 +40,11 @@
 
 5. [A5 README.md](a5/README.md "Assignment 5 README.md")
 
-6. [P1 README.md](P1/README.md "Project 1 README.md")
+6. [P1 README.md](p1/README.md "Project 1 README.md")
 
     - Screenshot of failed validation
     - Screenshot of passed validation
     - Skillsets 7-9
     - Chapter Questions (9 and 10)
 
-7. [P2 README.md](P2/README.md "Project 2 README.md")
+7. [P2 README.md](p2/README.md "Project 2 README.md")
