@@ -22,10 +22,6 @@
 
 * Screenshot of A3 ERD that links to the image
 
-> This is a blockquote.
-> 
-> This is the second paragraph in the blockquote.
-
 #### Assignment Screenshots (Note: **BE SURE** to modify for specific course!):
 
 *1. Screenshot of ERD*

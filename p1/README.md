@@ -3,49 +3,29 @@
 >Also, this file **must** use Markdown syntax, and provide project documentation as per below--otherwise, points **will** be deducted.
 >
 
-# Course Title
+# LIS4368 - Advanced Web Application Development
 
-## Your Name
+## Jake H. Talsky
 
-### Assignment # Requirements:
+### Project 1 Requirements:
 
-*Sub-Heading:*
+*Deliverables:*
 
-1. Ordered-list items
-2. 
-3. 
+1. Add jQuery validation and regular expressions - as per the entity attribute requirements
+2. Provide Bitbucket read-only access to p1 repo, must include README.md, using Markdown syntax
+3. Chapter 9 and 10 questions
 
 #### README.md file should include the following items:
 
-* Bullet-list items
-* 
-* 
-* 
-
-> This is a blockquote.
-> 
-> This is the second paragraph in the blockquote.
->
-> #### Git commands w/short descriptions:
-
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
+* Screenshot of failed client-side validation
+* Screenshot of passed client-side validation
 
 #### Assignment Screenshots (Note: **BE SURE** to modify for specific course!):
 
-*Screenshot of AMPPS running http://localhost*:
+*Failed Validation*
 
-![AMPPS Installation Screenshot](img/ampps.png)
+![Failed Validation](img/failed_validation.png)
 
-*Screenshot of running java Hello*:
+*Passed Validation*
 
-![JDK Installation Screenshot](img/jdk_install.png)
-
-*Screenshot of Android Studio - My First App*:
-
-![Android Studio Installation Screenshot](img/android.png)
+![Passed Validation](img/passed_validation.png)

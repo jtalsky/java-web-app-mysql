@@ -13,7 +13,7 @@
 2. Create a Database Servlet using @WebServlet, inclusive
 3. Set and confirm environment variable paths
 4. Properly display assessment links through http://localhost:9999/
-5. Chapter 5 and 6 Questions
+5. Chapter 5 and 6 questions
 
 #### README.md file should include the following items:
 

@@ -1,5 +1,3 @@
-<%@ page import="java.util.Date, java.util.TimeZone, java.text.SimpleDateFormat" %>
-
 <style>
 /* Navbar background */
 nav.navbar.navbar-inverse
@@ -49,6 +47,8 @@ nav.navbar.navbar-inverse
     background-color: #CEB888;
 }
 </style>
+
+<%@ page import="java.util.Date, java.util.TimeZone, java.text.SimpleDateFormat" %>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">			

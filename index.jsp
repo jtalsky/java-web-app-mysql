@@ -183,7 +183,7 @@ h2
 					<div class="carousel-inner">
 
 						<!-- Slide 1 -->
-						<div class="active item" style="background: url(img/robot.jpg) no-repeat left center; background-size: cover;">
+						<div class="active item" style="background: url(img/atlanta.png) no-repeat center center; background-size: cover;">
 							<a href="https://www.linkedin.com/in/jake-talsky-3737a8212/"
 							   target="_blank"
 							   rel="noopener noreferrer"
@@ -199,7 +199,7 @@ h2
 						</div>
 
 						<!-- Slide 2 -->
-						<div class="item" style="background: url(img/Random_Turtle.jpg) no-repeat left center; background-size: cover;">
+						<div class="item" style="background: url(img/Random_Turtle.jpg) no-repeat center center; background-size: cover;">
 							<a href="https://bitbucket.org/"
 							   target="_blank"
 							   rel="noopener noreferrer"
@@ -215,7 +215,7 @@ h2
 						</div>
 
 						<!-- Slide 3 -->
-						<div class="item" style="background: url(img/keyboard.jpg) no-repeat left center; background-size: cover;">
+						<div class="item" style="background: url(img/fsu.png) no-repeat center center; background-size: cover;">
 							<a href="https://github.com/"
 							   target="_blank"
 							   rel="noopener noreferrer"
