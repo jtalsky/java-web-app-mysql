@@ -11,7 +11,7 @@
 	<meta name="author" content="Mark K. Jowett, Ph.D.">
 	<link rel="icon" href="../favicon.ico">
 
-	<title>LIS4368 - Project1 </title>
+	<title>LIS4368 - Project1</title>
 
 	<%@ include file="/css/include_css.jsp" %>		
 

@@ -59,7 +59,7 @@ nav.navbar.navbar-inverse
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="../index.jsp" target="_self">Home</a>
+				<a class="navbar-brand" href="${pageContext.request.contextPath}/index.jsp" target="_self">Home</a>
 			</div>
 
 			<div id="navbar" class="collapse navbar-collapse">

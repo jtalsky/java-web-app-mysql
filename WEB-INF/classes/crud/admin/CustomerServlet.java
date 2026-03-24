@@ -114,13 +114,21 @@ public class CustomerServlet extends HttpServlet
 				String id_v = request.getParameter(null); //null used for auto increment pk field
 				String firstName_v = request.getParameter("fname");
 				String lastName_v = request.getParameter("lname");
+				String street_v = request.getParameter("street");
+				String city_v = request.getParameter("city");
+				String state_v = request.getParameter("state");
+				String zip_v = request.getParameter("zip");
+				String phone_v = request.getParameter("phone");
 				String email_v = request.getParameter("email");
+				String balance_v = request.getParameter("balance");
+				String totalSales_v = request.getParameter("total_sales");
+				String notes_v = request.getParameter("notes");
 				
 				//instantiate new customer object with associated object variable (user)
-				Customer user = new Customer(id_v, firstName_v, lastName_v, email_v);
+				Customer user = new Customer(id_v, firstName_v, lastName_v, street_v, city_v, state_v, zip_v, phone_v, email_v, balance_v, totalSales_v, notes_v);
 
 				//call data input validation method: *Must* agree in TON: type, order, number!
-				if(!isValidInput(firstName_v, lastName_v, email_v))
+				if(!isValidInput(firstName_v, lastName_v, street_v, city_v, state_v, zip_v, phone_v, email_v, balance_v, totalSales_v, notes_v))
 					{
 						message = "<span style='color: red; background-color: yellow; font-weight: bold; font-variant:small-caps;'>All text boxes required except Notes.</span>";
 						url = "/customerform.jsp";
@@ -214,23 +222,72 @@ public class CustomerServlet extends HttpServlet
 	//http://java-source.net/open-source/validation
 	
 	//create data input validation method: *Must* agree in TON: type, order, number!
-	private boolean isValidInput(String firstName_p, String lastName_p, String email_p)
+	private boolean isValidInput(String fname, String lname, String street, String city, String state, String zip, String phone, String email, String balance, String totalSales, String notes)
 	{
-		if (
-				firstName_p == null ||
-				lastName_p == null ||
-				email_p == null ||
-								
-				firstName_p.isEmpty() ||
-				lastName_p.isEmpty() ||
-				email_p.isEmpty()
-				)
-			{
-				return false; //missing form data
-			} 
-		else
-			{
-				return true; //data not missing
-			}
-	}	
+
+    	// Check nulls first
+    	if
+		(
+			fname == null ||
+			lname == null ||
+			street == null||
+			city == null ||
+        	state == null ||
+			zip == null ||
+			phone == null||
+			email == null ||
+        	balance == null ||
+			totalSales == null
+		)
+	
+		{
+    	    return false;
+    	}
+
+    	// fname - letters and hyphens only, 1–15 chars
+    	if (!fname.matches("^[a-zA-Z\\-]{1,15}$"))
+			return false;
+
+    	// lname - letters and hyphens only, 1–30 chars
+    	if (!lname.matches("^[a-zA-Z\\-]{1,30}$"))
+			return false;
+
+    	// street - letters, numbers, spaces, commas, hyphens, periods, 1–30 chars
+    	if (!street.matches("^[a-zA-Z0-9\\s,\\-\\.]{1,30}$"))
+			return false;
+
+    	// city - letters, numbers, hyphens, spaces, 1–30 chars
+    	if (!city.matches("^[a-zA-Z0-9\\s\\-]{1,30}$"))
+			return false;
+
+    	// state - letters only, exactly 2 chars
+    	if (!state.matches("^[a-zA-Z]{2}$"))
+			return false;
+
+    	// zip - numbers only, 5–9 chars
+    	if (!zip.matches("^[0-9]{5,9}$"))
+			return false;
+
+    	// phone - numbers only, exactly 10 chars
+    	if (!phone.matches("^[0-9]{10}$"))
+			return false;
+
+    	// email - standard email format, 1–100 chars
+    	if (!email.matches("^([a-z0-9_\\.\\-]+)@([\\da-z\\.\\-]+)\\.([a-z\\.]{2,6})$"))
+			return false;
+
+    	// balance - numbers and decimal, 1–7 chars
+    	if (!balance.matches("^[0-9\\.]{1,7}$"))
+			return false;
+
+    	// total sales - numbers and decimal, 1–7 chars
+    	if (!totalSales.matches("^[0-9\\.]{1,7}$"))
+			return false;
+
+    	// notes - optional, cap at 255
+    	if (notes != null && notes.length() > 255)
+			return false;
+
+    	return true;
+	}
 }

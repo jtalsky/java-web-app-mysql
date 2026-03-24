@@ -1,5 +1,15 @@
-<h1>Assignment 4</h1>
-<h3>See...</h3>
-<p class="lead">...video.</p>
+<style>
+  h1
+  {
+    color: #782F40;
+  }
 
+  h3
+  {
+    color: #782F40;
+  }
+</style>
+
+<h1>Assignment 4</h1>
+<h3>Basic Server Side Validation</h3>
 (Table: customer)

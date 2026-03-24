@@ -3,49 +3,36 @@
 >Also, this file **must** use Markdown syntax, and provide project documentation as per below--otherwise, points **will** be deducted.
 >
 
-# Course Title
+# LIS4368 - Advanced Web Application Development
 
-## Your Name
+## Jake H. Talsky
 
-### Assignment # Requirements:
+### Assignment 4 Requirements:
 
-*Sub-Heading:*
+*Deliverables:*
 
-1. Ordered-list items
-2. 
-3. 
+1. Add server-side validation (and regular expressions) - as per the entity attribute requirements
+2. Provide Bitbucket read-only access to a4 repo, must include README.md, using Markdown syntax
+3. Skillsets 10-12
+4. Chapter 11 and 12 questions
 
 #### README.md file should include the following items:
 
-* Bullet-list items
-* 
-* 
-* 
-
-> This is a blockquote.
-> 
-> This is the second paragraph in the blockquote.
->
-> #### Git commands w/short descriptions:
-
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
+* Screenshot of failed server-side validation
+* Screenshot of passed server-side validation
 
 #### Assignment Screenshots (Note: **BE SURE** to modify for specific course!):
 
-*Screenshot of AMPPS running http://localhost*:
+*Failed Validation*
 
-![AMPPS Installation Screenshot](img/ampps.png)
+![Failed Validation](img/failed_validation.png)
 
-*Screenshot of running java Hello*:
+*Passed Validation*
 
-![JDK Installation Screenshot](img/jdk_install.png)
+![Passed Validation](img/passed_validation.png)
 
-*Screenshot of Android Studio - My First App*:
+#### Java Skill Set's Screenshots
 
-![Android Studio Installation Screenshot](img/android.png)
+| [Skillset 10: Simple Calculator](../skillsets/SS10_Simple_Calculator) | [Skillset 11: Compound Interest Calculator](../skillsets/SS11_Compound_Interest_Calculator) | [Skillset 12: Copy Array](../skillsets/SS12_Copy_Array) |
+| ------------------------------ | ------------------------------ | ------------------------------ |
+| [![Skillset 10](img/SS10_output.png)](img/SS10_output.png) | [![Skillset 11](img/SS11_output.png)](img/SS11_output.png) | [![Skillset 12](img/SS12_output.png)](img/SS12_output.png) |
