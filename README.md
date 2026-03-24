@@ -38,12 +38,17 @@
 
 4. [A4 README.md](a4/README.md "Assignment 4 README.md")
 
+    - Screenshot of failed server-side validation
+    - Screenshot of passed server-side validation
+    - Skillsets 10-12
+    - Chapter Questions (11 and 12)
+
 5. [A5 README.md](a5/README.md "Assignment 5 README.md")
 
 6. [P1 README.md](p1/README.md "Project 1 README.md")
 
-    - Screenshot of failed validation
-    - Screenshot of passed validation
+    - Screenshot of failed client-side validation
+    - Screenshot of passed client-side validation
     - Skillsets 7-9
     - Chapter Questions (9 and 10)
 
