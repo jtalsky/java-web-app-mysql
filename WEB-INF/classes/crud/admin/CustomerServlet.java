@@ -13,65 +13,42 @@
 
 	2. Run: http://localhost:9999/lis4368/customerAdmin
 */
-//package statement indicates which directory this file exists, starting from "classes" directory
 package crud.admin;
 
-import java.io.*; //input/output
-//Note: ArrayList provides *dynamic* resizable-array (i.e., items can be added and removed from list), unlike simple Array (fixed-length)
-import java.util.*; //ArrayList<SomeCollection>, Enumeration
+import java.io.*;
+import java.util.*;
 
-//Tomact 10 must include following imports:
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
-//These don't work anymore!
-// import javax.servlet.*;
-// import javax.servlet.http.*;
-// import javax.servlet.annotation.*; 
-
-//import Customer and CustomerDB classes
 import crud.business.Customer;
 //import crud.data.CustomerDB;
 
-//servlet mapping for Servlet 3.0
-//servlet Customer is mapped to the URL pattern /customerAdmin
-//When accessing this servlet, it will return a message.
 @WebServlet("/customerAdmin")
 public class CustomerServlet extends HttpServlet
 {
-	//perform different request data processing depending on transfer method (here, Post or Get)
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
 	{
-		//initialize global variables:
-		//if no current session, returns new session (required!)
 		HttpSession session = request.getSession();
 
-		//initialize url variable - used below to direct user to appropriate page	
 		String url = "/index.jsp";
-		String message = ""; //initialize message variable				
-		String action = null; //initialize action
-		String cid = null; //initialize customer id, and used to add customer (auto-increment PK)
-		action = request.getParameter("action"); // get current action
+		String message = "";
+		String action = null;
+		String cid = null;
+		action = request.getParameter("action");
 
-		//get user action
-		//from customers.jsp
-		//get id from hidden form field name property: modify_customer (Edit button customers.jsp)
 		if (request.getParameter("modify_customer") != null) 
 			{
 				action = "modify_customer";
 				cid = request.getParameter(action); 
 			}
-		//from customers.jsp
-		//get id from hidden form field name property: delete_customer (Delete button customers.jsp)
 		else if (request.getParameter("delete_customer") != null) 
 			{
 				action = "delete_customer";
 				cid = request.getParameter(action); 
 			}
-		//from modify.jsp
-		//get id from hidden form field update_customer name property
 		else if (request.getParameter("update_customer") != null) 
 			{
 				action = "update_customer";
@@ -79,39 +56,28 @@ public class CustomerServlet extends HttpServlet
 			}
 		else
 			{
-				url = "/index.jsp"; //if none above, pass user to main page
+				url = "/index.jsp";
 			}
 
-		// perform action, based upon request, and set URL to appropriate page
-		//first test: if action variable contains no value, or "join" (from thanks.jsp), send to customerform.jsp
-		//Note: if you invoke .equals() on null will return NullPointerException
-		//Solution: Always advisble to check null before invoking .equals() method
 		if (action == null || action.equals("join"))
 			{
-				url = "/customerform.jsp";   //"join" page						
+				url = "/customerform.jsp";
 			}
-		//from customers.jsp
 		else if (action.equals("modify_customer"))
 			{
 				//Customer user = CustomerDB.selectCustomer(cid);
-				//session.setAttribute("user", user); //Pass data from servlet to jsp using session and setAttribute("name","value") method
-				url = "/modify.jsp"; //pass user to modify.jsp, and display data
+				//session.setAttribute("user", user);
+				url = "/modify.jsp";
 			}
-		//from customerform.jsp
 		else if (action.equals("display_customers"))
 			{
 				//ArrayList<Customer> users = CustomerDB.selectCustomers();            
 				//request.setAttribute("users", users);
-				url = "/customers.jsp"; //pass user to customers.jsp, and display all values
+				url = "/customers.jsp";
 			}
-		//from customers.jsp
 		else if (action.equals("add_customer"))
 			{
-				// get parameters from the request (data conversions not required here)
-				//zip should be int, phone long, balance and totalSales BigDecimal data types
-				//getParameter() method accepts values from form control *name* attribute
-				//Note: getParameter() is pulling user-entered values from "name" attribute of submitted form
-				String id_v = request.getParameter(null); //null used for auto increment pk field
+				String id_v = request.getParameter(null);
 				String firstName_v = request.getParameter("fname");
 				String lastName_v = request.getParameter("lname");
 				String street_v = request.getParameter("street");
@@ -124,22 +90,23 @@ public class CustomerServlet extends HttpServlet
 				String totalSales_v = request.getParameter("total_sales");
 				String notes_v = request.getParameter("notes");
 				
-				//instantiate new customer object with associated object variable (user)
 				Customer user = new Customer(id_v, firstName_v, lastName_v, street_v, city_v, state_v, zip_v, phone_v, email_v, balance_v, totalSales_v, notes_v);
 
-				//call data input validation method: *Must* agree in TON: type, order, number!
-				if(!isValidInput(firstName_v, lastName_v, street_v, city_v, state_v, zip_v, phone_v, email_v, balance_v, totalSales_v, notes_v))
+				// collect individual error messages
+				String errors = getValidationErrors(firstName_v, lastName_v, street_v, city_v, state_v, zip_v, phone_v, email_v, balance_v, totalSales_v, notes_v);
+
+				if (!errors.isEmpty())
 					{
-						message = "<span style='color: red; background-color: yellow; font-weight: bold; font-variant:small-caps;'>All text boxes required except Notes.</span>";
+						message = errors;
 						url = "/customerform.jsp";
 					}
 				else
 					{
-						//add customer
 						//CustomerDB.insert(user);
-						message = ""; //reset message variable to empty string
-						url = "/thanks.jsp"; //pass user to thanks.jsp page
+						message = "";
+						url = "/thanks.jsp";
 					}
+
 				request.setAttribute("user", user);
 				request.setAttribute("message", message);
 			}
@@ -147,99 +114,68 @@ public class CustomerServlet extends HttpServlet
 		/*
 		else if (action.equals("update_customer"))
 			{
-				// get parameters from the request
 				String firstName_v = request.getParameter("fname");
 				String lastName_v = request.getParameter("lname");
 				String email_v = request.getParameter("email");
 				
-				//call data input validation method: *Must* agree in TON: type, order, number!
 				if(!isValidInput(firstName_v, lastName_v, email_v))
 					{
 						url = "/modify.jsp";
 					}
 				else
 					{
-						// get and update customer
 						Customer user = (Customer) session.getAttribute("user");        
 
-						user.setId(cid); //cid retrieved from request.getParameter(action);
+						user.setId(cid);
 						user.setFname(firstName_v);
 						user.setLname(lastName_v);
 						user.setEmail(email_v);
 
-						// update customer				 
 						//CustomerDB.update(user);
 						
-						// display updated customers
 						//ArrayList<Customer> users = CustomerDB.selectCustomers();            
 						//request.setAttribute("users", users);
-						url = "/customers.jsp"; //pass user to customers.jsp page
+						url = "/customers.jsp";
 					}				
 			}
 		*/
 			
 		else if (action.equals("delete_customer"))
 			{
-				// get customer
 				//Customer user = CustomerDB.selectCustomer(cid);
-
-				// delete customer
 				//CustomerDB.delete(user);
-            
-				// display remaining customers
 				//ArrayList<Customer> users = CustomerDB.selectCustomers();            
 				//request.setAttribute("users", users);
-
-				url = "/customers.jsp"; //pass user to customers.jsp page
+				url = "/customers.jsp";
 			}
-		//forward (not redirect), can provide additional security, as user does not see actual URL
+
 		getServletContext()
 			.getRequestDispatcher(url)
 			.forward(request, response);
-				
-		//sometimes, better to redirect than forward (e.g., insert/update/delete or to see correct URL)
-		//response.sendRedirect(url);
-		//response.sendRedirect("index.jsp"); //or literal value
 	}    
 
-	//for all get submissions	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
 	{	
 		doPost(request, response);
 	}
 
-	//validate input: return true or false
-	//here: check *only* for data entry
-	//empty string: string with zero length.
-	//null value: is unknown value--not having a string.
-
-	//must check for both:
-	//1) null (no object created/no value), and...
-	//2) empty string ("" is an actual string object)
-	
-	//Note: in production environment need rigorous data validation:
-	//http://java-source.net/open-source/validation
-	
-	//create data input validation method: *Must* agree in TON: type, order, number!
+	// original isValidInput — kept as provided by professor
 	private boolean isValidInput(String fname, String lname, String street, String city, String state, String zip, String phone, String email, String balance, String totalSales, String notes)
 	{
-
-    	// Check nulls first
     	if
 		(
 			fname == null ||
 			lname == null ||
-			street == null||
+			street == null ||
 			city == null ||
         	state == null ||
 			zip == null ||
-			phone == null||
+			phone == null ||
 			email == null ||
         	balance == null ||
 			totalSales == null
 		)
-	
 		{
     	    return false;
     	}
@@ -289,5 +225,86 @@ public class CustomerServlet extends HttpServlet
 			return false;
 
     	return true;
+	}
+
+	// new method — returns individual error messages as an HTML string
+	private String getValidationErrors(String fname, String lname, String street, String city,
+                                        String state, String zip, String phone, String email,
+                                        String balance, String totalSales, String notes)
+	{
+		StringBuilder errors = new StringBuilder();
+		errors.append("<ul style='color: red; background-color: yellow; font-weight: bold; font-variant:small-caps;'>");
+
+		// fname - check empty first, then validate
+		if (fname == null || fname.isEmpty())
+			errors.append("<li>First name required</li>");
+		else if (!fname.matches("^[a-zA-Z\\-]{1,15}$"))
+			errors.append("<li>First name can only contain letters and hyphens, no more than 15 characters</li>");
+
+		// lname - check empty first, then validate
+		if (lname == null || lname.isEmpty())
+			errors.append("<li>Last name required</li>");
+		else if (!lname.matches("^[a-zA-Z\\-]{1,30}$"))
+			errors.append("<li>Last name can only contain letters and hyphens, no more than 30 characters</li>");
+
+		// street - check empty first, then validate
+		if (street == null || street.isEmpty())
+			errors.append("<li>Street required</li>");
+		else if (!street.matches("^[a-zA-Z0-9\\s,\\-\\.]{1,30}$"))
+			errors.append("<li>Street can only contain letters, numbers, commas, hyphens, or periods, no more than 30 characters</li>");
+
+		// city - check empty first, then validate
+		if (city == null || city.isEmpty())
+			errors.append("<li>City required</li>");
+		else if (!city.matches("^[a-zA-Z0-9\\s\\-]{1,30}$"))
+			errors.append("<li>City can only contain letters, numbers, hyphens, and space character, no more than 30 characters</li>");
+
+		// state - check empty first, then validate
+		if (state == null || state.isEmpty())
+			errors.append("<li>State required</li>");
+		else if (!state.matches("^[a-zA-Z]{2}$"))
+			errors.append("<li>State can only contain letters, must be 2 characters</li>");
+
+		// zip - check empty first, then validate
+		if (zip == null || zip.isEmpty())
+			errors.append("<li>Zip required, only numbers</li>");
+		else if (!zip.matches("^[0-9]{5,9}$"))
+			errors.append("<li>Zip can only contain numbers, must be between 5 and 9 characters, inclusive</li>");
+
+		// phone - check empty first, then validate
+		if (phone == null || phone.isEmpty())
+			errors.append("<li>Phone required, including area code, only numbers</li>");
+		else if (!phone.matches("^[0-9]{10}$"))
+			errors.append("<li>Phone can only contain numbers, must be 10 characters including area code</li>");
+
+		// email - check empty first, then validate
+		if (email == null || email.isEmpty())
+			errors.append("<li>Email address is required</li>");
+		else if (!email.matches("^([a-z0-9_\\.\\-]+)@([\\da-z\\.\\-]+)\\.([a-z\\.]{2,6})$"))
+			errors.append("<li>Must include valid email</li>");
+
+		// balance - check empty first, then validate
+		if (balance == null || balance.isEmpty())
+			errors.append("<li>Balance is required</li>");
+		else if (!balance.matches("^[0-9\\.]{1,7}$"))
+			errors.append("<li>Balance can only contain numbers and decimal point, no more than 6 digits including decimal point</li>");
+
+		// total_sales - check empty first, then validate
+		if (totalSales == null || totalSales.isEmpty())
+			errors.append("<li>Total sales is required</li>");
+		else if (!totalSales.matches("^[0-9\\.]{1,7}$"))
+			errors.append("<li>Total sales can only contain numbers and decimal point, no more than 6 digits including decimal point</li>");
+
+		// notes - optional, cap at 255
+		if (notes != null && notes.length() > 255)
+			errors.append("<li>Notes cannot exceed 255 characters</li>");
+
+		errors.append("</ul>");
+
+		// if only the ul tags are present, no errors were found
+		if (errors.toString().equals("<ul style='color: red; background-color: yellow; font-weight: bold; font-variant:small-caps;'></ul>"))
+			return "";
+
+		return errors.toString();
 	}
 }

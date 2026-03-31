@@ -224,7 +224,23 @@ h2
 									<h2>Jake H. Talsky</h2>
 									<div class="carousel-caption">
 										<h3>GitHub</h3>
-										<span class="btn btn-lg">Learn More</span>
+										<span class="btn btn-lg">Learn More!</span>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<!-- Slide 4 -->
+						<div class="item" style="background: url(img/favicon.png) no-repeat center center; background-size: cover;">
+							<a href="https://webaim.org/resources/contrastchecker/"
+							   target="_blank"
+							   rel="noopener noreferrer"
+							   class="carousel-link">
+								<div class="container">
+									<h2>Logo</h2>
+									<div class="carousel-caption">
+										<h3>GitHub</h3>
+										<span class="btn btn-lg">Check Your Contrast!</span>
 									</div>
 								</div>
 							</a>
