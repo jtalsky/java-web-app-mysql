@@ -177,6 +177,7 @@ h2
 						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 						<li data-target="#myCarousel" data-slide-to="1"></li>
 						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
 					</ol>
 
 					<!-- Carousel items -->
@@ -231,7 +232,7 @@ h2
 						</div>
 
 						<!-- Slide 4 -->
-						<div class="item" style="background: url(img/favicon.png) no-repeat center center; background-size: cover;">
+						<div class="item" style="background: url(img/favicon.png) no-repeat center center; background-size: 50% 50%;">
 							<a href="https://webaim.org/resources/contrastchecker/"
 							   target="_blank"
 							   rel="noopener noreferrer"
@@ -239,7 +240,7 @@ h2
 								<div class="container">
 									<h2>Logo</h2>
 									<div class="carousel-caption">
-										<h3>GitHub</h3>
+										<h3>JT</h3>
 										<span class="btn btn-lg">Check Your Contrast!</span>
 									</div>
 								</div>

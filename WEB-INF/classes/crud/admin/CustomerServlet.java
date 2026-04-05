@@ -23,7 +23,7 @@ import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 import crud.business.Customer;
-//import crud.data.CustomerDB;
+import crud.data.CustomerDB;
 
 @WebServlet("/customerAdmin")
 public class CustomerServlet extends HttpServlet
@@ -92,7 +92,7 @@ public class CustomerServlet extends HttpServlet
 				
 				Customer user = new Customer(id_v, firstName_v, lastName_v, street_v, city_v, state_v, zip_v, phone_v, email_v, balance_v, totalSales_v, notes_v);
 
-				// collect individual error messages
+				//collect individual error messages
 				String errors = getValidationErrors(firstName_v, lastName_v, street_v, city_v, state_v, zip_v, phone_v, email_v, balance_v, totalSales_v, notes_v);
 
 				if (!errors.isEmpty())
@@ -102,7 +102,7 @@ public class CustomerServlet extends HttpServlet
 					}
 				else
 					{
-						//CustomerDB.insert(user);
+						CustomerDB.insert(user);
 						message = "";
 						url = "/thanks.jsp";
 					}
