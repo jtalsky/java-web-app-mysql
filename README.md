@@ -45,6 +45,12 @@
 
 5. [A5 README.md](a5/README.md "Assignment 5 README.md")
 
+    - Screenshots of passed server-side validation
+    - Screenshots of failed server-side validation
+    - Screenshot of insert functionality in customerform.jsp
+    - Skillsets 13-15
+    - Chapter Questions (13 and 15)
+
 6. [P1 README.md](p1/README.md "Project 1 README.md")
 
     - Screenshot of failed client-side validation

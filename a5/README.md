@@ -3,49 +3,42 @@
 >Also, this file **must** use Markdown syntax, and provide project documentation as per below--otherwise, points **will** be deducted.
 >
 
-# Course Title
+# LIS4368 - Advanced Web Application Development
 
-## Your Name
+## Jake H. Talsky
 
-### Assignment # Requirements:
+### Assignment 4 Requirements:
 
-*Sub-Heading:*
+*Deliverables:*
 
-1. Ordered-list items
-2. 
-3. 
+1. Include server-side validation
+2. Add insert functionality for customerform.jsp
+3. Provide Bitbucket read-only access to a4 repo, must include README.md, using Markdown syntax
+4. Skillsets 13-15
+5. Chapter 13, 14, and 15 questions
 
 #### README.md file should include the following items:
 
-* Bullet-list items
-* 
-* 
-* 
-
-> This is a blockquote.
-> 
-> This is the second paragraph in the blockquote.
->
-> #### Git commands w/short descriptions:
-
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
+* Screenshot of failed server-side validation
+* Screenshot of passed server-side validation
+* Screenshot of SQL data entry (in terminal)
 
 #### Assignment Screenshots (Note: **BE SURE** to modify for specific course!):
 
-*Screenshot of AMPPS running http://localhost*:
+*Valid User Entry*
 
-![AMPPS Installation Screenshot](img/ampps.png)
+![Failed Validation](img/valid_user_entry.png)
 
-*Screenshot of running java Hello*:
+*Passed Validation*
 
-![JDK Installation Screenshot](img/jdk_install.png)
+![Passed Validation](img/passed_validation.png)
 
-*Screenshot of Android Studio - My First App*:
+*Database Entry*
 
-![Android Studio Installation Screenshot](img/android.png)
+![Database Entry](img/database_entry.png)
+
+#### Java Skill Set's Screenshots
+
+| [Skillset 13: File Write Read Count Words](../skillsets/SS13_File_Write_Read_Count_Words) | [Skillset 14: Vehicle Class](../skillsets/SS14_Vehicle_Class) | [Skillset 15: Car Inherits Vehicle](../skillsets/SS15_Car_Inherits_Vehicle) |
+| ------------------------------ | ------------------------------ | ------------------------------ |
+| [![Skillset 13](img/SS13_output)](img/SS13_output.png) | [![Skillset 14](img/SS14_output.png)](img/SS14_output.png) | [![Skillset 15](img/SS15_output.png)](img/SS15_output.png) |
