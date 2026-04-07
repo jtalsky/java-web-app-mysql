@@ -41,4 +41,4 @@
 
 | [Skillset 13: File Write Read Count Words](../skillsets/SS13_File_Write_Read_Count_Words) | [Skillset 14: Vehicle Class](../skillsets/SS14_Vehicle_Class) | [Skillset 15: Car Inherits Vehicle](../skillsets/SS15_Car_Inherits_Vehicle) |
 | ------------------------------ | ------------------------------ | ------------------------------ |
-| [![Skillset 13](img/SS13_output)](img/SS13_output.png) | [![Skillset 14](img/SS14_output.png)](img/SS14_output.png) | [![Skillset 15](img/SS15_output.png)](img/SS15_output.png) |
+| [![Skillset 13](img/SS13_output.png)](img/SS13_output.png) | [![Skillset 14](img/SS14_output.png)](img/SS14_output.png) | [![Skillset 15](img/SS15_output.png)](img/SS15_output.png) |
