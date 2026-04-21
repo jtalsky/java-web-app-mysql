@@ -65,14 +65,14 @@ public class CustomerServlet extends HttpServlet
 			}
 		else if (action.equals("modify_customer"))
 			{
-				//Customer user = CustomerDB.selectCustomer(cid);
-				//session.setAttribute("user", user);
+				Customer user = CustomerDB.selectCustomer(cid);
+				session.setAttribute("user", user);
 				url = "/modify.jsp";
 			}
 		else if (action.equals("display_customers"))
 			{
-				//ArrayList<Customer> users = CustomerDB.selectCustomers();            
-				//request.setAttribute("users", users);
+				ArrayList<Customer> users = CustomerDB.selectCustomers();            
+				request.setAttribute("users", users);
 				url = "/customers.jsp";
 			}
 		else if (action.equals("add_customer"))
@@ -111,14 +111,21 @@ public class CustomerServlet extends HttpServlet
 				request.setAttribute("message", message);
 			}
 
-		/*
 		else if (action.equals("update_customer"))
 			{
 				String firstName_v = request.getParameter("fname");
 				String lastName_v = request.getParameter("lname");
+				String street_v = request.getParameter("street");
+				String city_v = request.getParameter("city");
+				String state_v = request.getParameter("state");
+				String zip_v = request.getParameter("zip");
+				String phone_v = request.getParameter("phone");
 				String email_v = request.getParameter("email");
+				String balance_v = request.getParameter("balance");
+				String totalSales_v = request.getParameter("total_sales");
+				String notes_v = request.getParameter("notes");
 				
-				if(!isValidInput(firstName_v, lastName_v, email_v))
+				if(!isValidInput(firstName_v, lastName_v, street_v, city_v, state_v, zip_v, phone_v, email_v, balance_v, totalSales_v, notes_v))
 					{
 						url = "/modify.jsp";
 					}
@@ -129,23 +136,30 @@ public class CustomerServlet extends HttpServlet
 						user.setId(cid);
 						user.setFname(firstName_v);
 						user.setLname(lastName_v);
+						user.setStreet(street_v);
+						user.setCity(city_v);
+						user.setState(state_v);
+						user.setZip(zip_v);
+						user.setPhone(phone_v);
 						user.setEmail(email_v);
+						user.setBalance(balance_v);
+						user.setTotalSales(totalSales_v);
+						user.setNotes(notes_v);
 
-						//CustomerDB.update(user);
+						CustomerDB.update(user);
 						
-						//ArrayList<Customer> users = CustomerDB.selectCustomers();            
-						//request.setAttribute("users", users);
+						ArrayList<Customer> users = CustomerDB.selectCustomers();            
+						request.setAttribute("users", users);
 						url = "/customers.jsp";
 					}				
 			}
-		*/
 			
 		else if (action.equals("delete_customer"))
 			{
-				//Customer user = CustomerDB.selectCustomer(cid);
-				//CustomerDB.delete(user);
-				//ArrayList<Customer> users = CustomerDB.selectCustomers();            
-				//request.setAttribute("users", users);
+				Customer user = CustomerDB.selectCustomer(cid);
+				CustomerDB.delete(user);
+				ArrayList<Customer> users = CustomerDB.selectCustomers();            
+				request.setAttribute("users", users);
 				url = "/customers.jsp";
 			}
 

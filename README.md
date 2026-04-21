@@ -59,3 +59,8 @@
     - Chapter Questions (9 and 10)
 
 7. [P2 README.md](p2/README.md "Project 2 README.md")
+
+    - Screenshot of passed client- and server-side validation
+    - Screenshot of related modified database tables
+    - Screenshot of logo contrast checker
+    - Chapter Questions (16 and 17)

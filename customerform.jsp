@@ -194,7 +194,7 @@
 	</div> <!-- end container -->
 
 	<%-- test server-side validation, by not including client-side JavaScript --%>
- 	<%--@ include file="/js/include_js.jsp" --%>		
+ 	<%@ include file="/js/include_js.jsp" %>		
  
 <script type="text/javascript">
 $(document).ready(function()
